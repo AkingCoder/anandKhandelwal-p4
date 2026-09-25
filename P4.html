@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Book Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 30px;
+            background-color: #f7f4ed;
+            color: #293241;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+        }
+
+        center:first-child {
+            padding: 0 20px 28px;
+            background-color: #263b52;
+            color: #fffaf0;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            padding: 14px 10px;
+            background-color: #1b2d40;
+        }
+
+        .navbar a {
+            font-size: 14px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        center:first-child p {
+            margin: 4px 0 18px;
+            color: #d9e5ef;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #d5c9b8;
+            margin: 24px 0;
+        }
+
+        center:first-child hr {
+            border-top-color: #61758b;
+        }
+
+        .offer-popup {
+            position: fixed;
+            top: 76px;
+            right: 22px;
+            z-index: 9;
+            width: 245px;
+            padding: 16px 18px;
+            border: 2px solid chartreuse;
+            border-radius: 8px;
+            background-color: forestgreen;
+            color: #000000;
+            box-shadow: 0 8px 24px rgba(38, 59, 82, 0.2);
+            animation: offer-pop 0.7s ease-out;
+        }
+
+        .offer-popup h2 {
+            margin: 0 0 4px;
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .offer-popup p {
+            font-size: bolder;
+            margin: 0;
+        }
+
+        @keyframes offer-pop {
+            from {
+                opacity: 0;
+                transform: translateY(-18px) scale(0.92);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        a {
+            color: #fffaf0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin: 30px 0 8px;
+            color: #263b52;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px 28px;
+            max-width: 560px;
+            padding-left: 22px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 14px;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 14px rgba(38, 59, 82, 0.08);
+        }
+
+        th,
+        td {
+            padding: 13px 15px;
+            border: 1px solid #d5c9b8;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d9e5ef;
+            color: #263b52;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fbf8f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#">Categories</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <h1>ABC Online Book Store</h1>
+
+        <p>Your Online Destination for Books</p>
+
+        <div class="offer-popup">
+            <h2>• Special Offer</h2>
+            <p>
+                Get 20% discount on selected books.
+            </p>
+        </div>
+
+    </center>
+
+    <h2>Welcome to ABC Online Book Store</h2>
+
+    <p>
+        Find books from different categories including technology,
+        programming, fiction, business and education.
+    </p>
+
+    <h2>Book Categories</h2>
+
+    <ul>
+        <li>Programming</li>
+        <li>Computer Science</li>
+        <li>Business</li>
+        <li>Fiction</li>
+        <li>Competitive Exams</li>
+    </ul>
+
+    <h2>Popular Books</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Python Programming</td>
+            <td>John Smith</td>
+            <td>₹450</td>
+        </tr>
+
+        <tr>
+            <td>Web Technology</td>
+            <td>David Brown</td>
+            <td>₹500</td>
+        </tr>
+
+        <tr>
+            <td>Database Management</td>
+            <td>Robert Lee</td>
+            <td>₹550</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <center>
+        <p>© 2026 ABC Online Book Store</p>
+    </center>
+
+</body>
+
+</html>
